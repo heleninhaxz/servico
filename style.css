@@ -1,0 +1,193 @@
+/* Estilo global */
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo do header */
+header {
+    background: linear-gradient(to bottom right, rgb(165, 0, 180), rgb(88, 0, 136), rgb(92, 27, 255));
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-abrir {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-abrir:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Estilo da navegação */
+nav {
+    height: 100%;
+    width: 0; /* Ajustado para 0 em vez de 0px */
+    background-color: rgb(38, 0, 144);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.35s;
+    padding-top: 60px;
+}
+
+nav a {
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(165, 0, 180);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-fechar {
+    font-size: 30px;
+    color: white;
+    text-align: right;
+    padding: 10px 20px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-fechar:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 20px auto; /* Centraliza o conteúdo */
+    max-width: 1200px; /* Define uma largura máxima */
+    font-weight: bolder;
+    padding-top: 60px; /* Adicione este padding para espaçamento superior */
+}
+
+/* Layout do conteúdo principal */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    background-color: #bcbbbb;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Estilos dos elementos de exibição do array para o primeiro exercício */
+#res, #passos {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    padding: 10px;
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+/* Estilos dos elementos de exibição do array para o segundo exercício */
+#res2, #passos2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    padding: 10px;
+    white-space: pre-wrap;
+    text-align: left;
+    font-weight: bolder;
+}
+
+h1 {
+    color: rgb(38, 0, 144);
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Botão centralizado */
+.box {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    border-radius: 12px;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(38, 0, 144);
+}
+
+/* Estilo específico para o segundo exercício */
+#original2, #sorted2 {
+    padding: 10px;
+    background-color: #bcbbbb;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* Estilo específico para o terceiro exercício */
+#original3, #sorted3 {
+    padding: 10px;
+    background-color: #bcbbbb;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#res3, #passos3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    padding: 10px;
+    white-space: pre-wrap;
+    text-align: left;
+    font-weight: bolder;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background: linear-gradient(to bottom right, rgb(165, 0, 180), rgb(88, 0, 136), rgb(92, 27, 255));
+    color: rgb(0, 0, 0);
+}
+
+footer p {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.contatos {
+    text-align: center;
+}

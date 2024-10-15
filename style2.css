@@ -1,0 +1,106 @@
+/* Estilo global já existente */
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilo do header */
+header {
+    background: linear-gradient(to bottom right, rgb(165, 0, 180), rgb(88, 0, 136), rgb(92, 27, 255));
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-abrir {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-abrir:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Estilo da navegação */
+nav {
+    height: 100%;
+    width: 0px;
+    background-color: rgb(38, 0, 144);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.35s;
+    padding-top: 60px;
+}
+
+nav a {
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+    transition: 0.3s;
+}
+
+/* Estilo do main e seção de contatos */
+main {
+    padding: 20px;
+}
+
+.contatos {
+    max-width: 600px; /* Largura máxima para a seção de contatos */
+    margin: auto; /* Centraliza a seção */
+    background-color: white; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centraliza o texto */
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column; /* Alinha os itens na coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.redes-sociais a {
+    margin: 10px 0; /* Espaçamento entre os ícones */
+    display: flex; /* Usado para centralizar ícones e texto */
+    align-items: center; /* Alinha verticalmente o ícone e texto */
+}
+
+.redes-sociais svg {
+    margin-right: 8px; /* Espaçamento entre ícone e texto */
+    fill: rgb(165, 0, 180); /* Cor dos ícones */
+}
+
+/* Estilo do footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background: linear-gradient(to bottom right, rgb(165, 0, 180), rgb(88, 0, 136), rgb(92, 27, 255));
+    color: rgb(0, 0, 0);
+}
+
+footer p {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.contatos {
+    text-align: center; /* Centraliza o texto na seção de contatos */
+}

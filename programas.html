@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="helenat-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="ex1.js" defer></script>
+    <script src="ex2.js" defer></script>
+    <script src="ex3.js" defer></script>
+    <title>Site Serviço</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776;</a>
+    </header>
+    <nav id="menu">
+        <a href="#" class="btn-fechar" onclick="fecharMenu()">&times; Fechar</a>
+        <a href="index.html">Home</a>
+        <a href="servicos.html">Serviços de Rede</a>
+        <a href="algoritimos.html">Algoritmos</a>
+        <a href="deremer.html">Der e Mer</a>
+        <a href="componentes.html">Componentes</a>
+        <a href="algoritmos.html">Algoritmos Implementados</a>
+        <a href="implementados.html">Implementados JS</a>
+        <a href="programas.html">Ordenação em JS</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <main id="conteudo">
+        <h1>Programas de ordenação implementados em Javascript</h1>
+
+        <!-- Exercício 1 -->
+        <h2>Exercício 1 - Gerar um array aleatório com tamanho igual a 10 elementos com intervalo de 1 a 20. Usando o algoritmo Bubble Sort, ordenar o array em ordem crescente ou decrescente.</h2>
+        <div class="box">
+            <button onclick="chamada1Crescente()">Ordenar Crescente</button>
+            <button onclick="chamada1Decrescente()">Ordenar Decrescente</button>
+        </div>
+        <div class="container">
+            <div id="original" class="column">
+                <h3>Array Bagunçado</h3>
+                <div id="res"></div>
+            </div>
+            <div id="sorted" class="column">
+                <h3>Passo a Passo do Bubble Sort</h3>
+                <div id="passos"></div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Exercício 2 -->
+        <h2>Exercício 2 - Gerar um array com valores fixos: [5,3,1,4,2]. Usando o algoritmo Bubble Sort, ordenar o array em ordem crescente ou decrescente.</h2>
+        <div class="box">
+            <button onclick="chamada2Crescente()">Ordenar Crescente</button>
+            <button onclick="chamada2Decrescente()">Ordenar Decrescente</button>
+        </div>
+        <div class="container">
+            <div id="original2" class="column">
+                <h3>Array Bagunçado</h3>
+                <div id="res2"></div>
+            </div>
+            <div id="sorted2" class="column">
+                <h3>Passo a Passo do Bubble Sort</h3>
+                <div id="passos2"></div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Exercício 3 -->
+        <h2>Exercício 3 - Gerar um array aleatório com tamanho igual a 10 elementos com intervalo de 1 a 20. Usando o algoritmo Bubble Sort, ordenar o array em ordem crescente ou decrescente.</h2>
+        <div class="box">
+            <button onclick="chamada3Crescente()">Ordenar Crescente</button>
+            <button onclick="chamada3Decrescente()">Ordenar Decrescente</button>
+        </div>
+        <div class="container">
+            <div id="original3" class="column">
+                <h3>Array Bagunçado e Ordenado</h3>
+                <div id="res3"></div>
+            </div>
+            <div id="sorted3" class="column">
+                <h3>Passo a Passo do Bubble Sort</h3>
+                <div id="passos3"></div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function abrirMenu() {
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('conteudo').style.marginLeft = '250px'; // Ajusta a margem ao abrir
+        }
+
+        function fecharMenu() {
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('conteudo').style.marginLeft = '0px'; // Ajusta a margem ao fechar
+            document.getElementById('conteudo').style.margin = '0 auto'; // Centraliza o conteúdo
+        }
+    </script>
+    <br>
+    <footer>
+        <p>&copy;  Aulas 2024 - Desenvolvido por Helena Neis</p>
+    </footer>
+</body>
+</html>

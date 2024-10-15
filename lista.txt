@@ -1,0 +1,10 @@
+1- print de tela do cisco(servidor)(dhcp, dns,)
+2-
+3-switch, servidor, computador,notbook, cabo de rede e a grimpagem
+(1,2,3 = serviços de rede)
+4- fluxograma
+5, 6 - banco de dados
+7- componentes eletronicos (equipe mostra steam) = arduino, sensor de temperatura, led, 
+8-
+9-
+10- 

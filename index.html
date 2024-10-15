@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="helenat-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Site Serviço</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="btn-abrir" onclick="abrirMenu()">&#9776;</a>
+    </header>
+    <nav id="menu">
+        <a href="#" class="btn-fechar" onclick="fecharMenu()">&times; Fechar</a> <!-- Adicionei a palavra "Fechar" aqui -->
+        <a href="index.html">Home</a>
+        <a href="servicos.html">Serviços de Rede</a>
+        <a href="algoritimos.html">Algoritmos</a>
+        <a href="deremer.html">Der e Mer</a>
+        <a href="componentes.html">Componentes</a>
+        <a href="algoritmos.html">Algoritmos Implementados</a>
+        <a href="implementados.html">Implementados JS</a>
+        <a href="programas.html">Ordenação em JS</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <main id="conteudo">
+        <h1>Site Serviço</h1>
+        <p>Conteúdo da página
+            https://sa-bryan.netlify.app/
+        </p>
+    </main>
+<script>
+function abrirMenu(){
+   document.getElementById('menu').style.width ='250px';
+   document.getElementById('conteudo').style.marginLeft = '250px';
+}
+
+function fecharMenu(){
+    document.getElementById('menu').style.width = '0px';
+    document.getElementById('conteudo').style.marginLeft = '0px';
+}
+</script>
+</body>
+</html>
